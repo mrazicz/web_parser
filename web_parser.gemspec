@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Daniel Mrozek"]
   spec.email         = ["mrazicz@gmail.com"]
   spec.description   = %q{Simple gem for easy web page parsing.}
-  spec.summary       = %q{Simple gem for easy web page parsing. Just set xpaths and url, and get hash wih informations.}
+  spec.summary       = %q{Simple gem for easy web page parsing. Just set xpaths, provide HTML, and get hash with informations.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -18,6 +18,9 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "nokogiri", "~> 1.6.3.1"
+
   spec.add_development_dependency "bundler", "~> 1.3"
+  spec.add_development_dependency "pry"
   spec.add_development_dependency "rake"
 end
