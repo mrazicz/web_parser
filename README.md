@@ -60,7 +60,7 @@ require 'open-uri'
 
 html_page = open('http://search.yahoo.com/search?p=Ruby').read
 
-WebPage.new(html_page).parse
+YahooSearch.new(html_page).parse
 => {:query=>"Ruby",
     :query_downcase=>"ruby",
     :page_number=>1,
