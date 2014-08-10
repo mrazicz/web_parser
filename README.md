@@ -1,4 +1,4 @@
-# WebParser
+# WebParser [![Code Climate](https://codeclimate.com/github/mrazicz/web_parser/badges/gpa.svg)](https://codeclimate.com/github/mrazicz/web_parser)
 
 Simple gem for easy information fetching from web pages.
 
