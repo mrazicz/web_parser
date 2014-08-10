@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["mrazicz@gmail.com"]
   spec.description   = %q{Simple gem for easy web page parsing.}
   spec.summary       = %q{Simple gem for easy web page parsing. Just set xpaths, provide HTML, and get hash with informations.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/mrazicz/web_parser"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
