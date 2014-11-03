@@ -23,7 +23,7 @@ module WebParser
       if    block_given? && args.size == 0
         @recipes[name] = Recipes.new(&block)
       elsif block_given? && (args.size == 2 || args.size == 3)
-        args[2] ||= -> (val) { val } # just return array of elements
+        args[2] ||= ->(val) { val } # just return array of elements
         @recipes[name] = Recipes.new(:each, Recipe.new(name, *args), &block)
       elsif !block_given? && (args.size == 2 || args.size == 3)
         @recipes[name] = Recipe.new(name, *args, &block)
